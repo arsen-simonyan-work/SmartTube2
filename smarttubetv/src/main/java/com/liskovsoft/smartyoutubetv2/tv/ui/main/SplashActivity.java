@@ -2,6 +2,8 @@ package com.liskovsoft.smartyoutubetv2.tv.ui.main;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+
 import com.liskovsoft.smartyoutubetv2.common.app.presenters.SplashPresenter;
 import com.liskovsoft.smartyoutubetv2.common.app.views.SplashView;
 import com.liskovsoft.smartyoutubetv2.common.misc.MotherActivity;
@@ -20,6 +22,9 @@ public class SplashActivity extends MotherActivity implements SplashView {
         mPresenter = SplashPresenter.instance(this);
         mPresenter.setView(this);
         mPresenter.onViewInitialized();
+
+
+        Log.e("@err", "This is my test log for checking marge conflicts");
 
         //finish();
     }
